@@ -22,7 +22,8 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-questions.forEach(function (question) {
+// TODO: fix this somehow so that the input actually works and doesn't just skip over the answers
+function askQuestion (question: [String, String, String, String, String, Answer]): boolean {
     // Print out the question information
     console.log(question[0]);
     console.log("A. " + question[1]);
@@ -59,4 +60,8 @@ questions.forEach(function (question) {
     });
 
     console.log(choiceEnum);
-})
+    return choiceEnum === question[5];
+}
+
+// Ask all of the questions
+questions.forEach((question) => askQuestion(question));
