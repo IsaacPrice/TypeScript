@@ -72,3 +72,5 @@ let tempTask: UncompletedTask = {
 let todoList: TaskManager = new TaskManager([tempTask, tempTask, tempTask]);
 
 todoList.DisplayTasks();
+
+todoList.DisplayTasks();
