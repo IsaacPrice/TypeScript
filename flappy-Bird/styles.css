@@ -1,0 +1,17 @@
+.bird {
+    background-color: yellow;
+}
+
+.pipe-top {
+    background-color: green;
+    width: 100px;
+}
+
+.bottom-pipe {
+    background-color: green;
+    width: 100px;
+}
+
+body {
+    background-color: lightblue;
+}
