@@ -1,17 +1,45 @@
 .bird {
-    background-color: yellow;
+    background: linear-gradient(45deg, rgb(167, 167, 21), yellow);
+    width: 6.66vh;
+    border-radius: 50%;
 }
 
 .pipe-top {
-    background-color: green;
+    background: linear-gradient(-90deg, green, rgb(19, 184, 19) 60%, green);
     width: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .bottom-pipe {
-    background-color: green;
+    background: linear-gradient(-90deg, green, rgb(19, 184, 19) 60%, green);
     width: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 body {
-    background-color: lightblue;
+    background-color: rgb(108, 199, 230);
+}  
+
+.ground {
+    background: green;
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+}
+
+.ground:last-child {
+    height: 25px;
+    background: rgb(83, 50, 28);
+}
+
+#score-display {
+    font-family: Roboto;
+    color: white;
+    font-size: 5em;
+    position: fixed;
+    left: 48vw;
 }
