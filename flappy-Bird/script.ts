@@ -16,7 +16,6 @@ class Pipe {
         const clientHeight: number = window.innerHeight;
         const Difference = clientHeight * pipeVariance; // the center of the pipes is within this
         let Center = Math.random() * Difference; // get a random float 0-1 and multiply it by the difference
-        //Center += ((clientHeight * (1 - pipeVariance)) / 2); // Add padding to the center
 
         // Create top boundary
         this.TopBound = document.createElement("div");
@@ -213,8 +212,6 @@ class Game {
 
         // Create the first pipe
         this.Pipes = Array<Pipe>();
-        //const startingPipe = new Pipe(speed, pipeVariance, pipeSpace, fps, 0);
-        //this.Pipes.push(startingPipe);
 
         // Setup the inputs
         const jumper = this.FlappyBird.jump.bind(this.FlappyBird);
